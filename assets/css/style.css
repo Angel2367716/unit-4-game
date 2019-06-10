@@ -1,0 +1,23 @@
+body {
+    background: url(../images/crystal_background.jpg)  no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+    
+}
+
+.jumbotron {
+    background-size:cover;
+    background-color: rgba(255,255,255, 0.5);
+  color: inherit;
+}
+
+.card {
+    background-size:cover;
+    background-color: rgba(255,255,255, 0.5);
+  color: inherit;
+}
+p, h4, h5, h1{
+    color: white;
+}
