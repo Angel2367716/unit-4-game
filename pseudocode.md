@@ -47,23 +47,28 @@ Just put this link on your html file
     *here use the object syntax format where you grab one of the global variables and along side with both of its sub-object and equal it to the randomizer function in order to get a random number b/w 1-12 (the 1-12 will be the parameters you would have to put)
     ****This would be a good place to use console log to test out your code and make sure it works ✓✓
 13)change the html to reflect all of the before changes
-    14)Add the start game set up in the main process
-15)change the target and your score html to reflec the random numbers
-16)add an id for the target score and another id for the player score
-17)create a line that runs in jquery that runs player and target score 
-    **use a jquery selector + id score + where you want the document to be changed (try html) and include score or target score variable
-    **if there's flicker it might be due to the initial input you have on your html file for the player score and target score, delete them you don't need anything there
+    *make sure you place this inside your startGame function 
+    14)Add the start game set up in the main process (on top of all other processes)✓✓
+    15)change the target and your score html to reflect the random numbers✓✓
+    16)add an id for the target score and another id for the player score✓✓
+        
+17)create a line that runs in jquery that runs player and target score  ✓✓
+    **use a jquery selector + id score + where you want the document to be changed (try html) and include score or target score variable ✓✓
+    **if there's flicker it might be due to the initial input you have on your html file for the player score and target score, delete them you don't need anything there ✓✓
 
 Changing the current score in response to the crystals being clicked
-18)create a new function, you can call it addValues () 
+18)create a new function, you can call it addValues () ✓✓
+    *make sure you use the correct parameter for the acdValues function, this way your function will know what are the options you want it to
     *each of the crystals have been organized as objects
-    *inside the funciton, equal the current score to current score plus the value of the crytal ( crystal.value )
-    *console log your results to make sure the funcitons are working use the "target score" + crystal.blue.value + another piece of html + etc.
-19)on the main processes create a process that will change the value of each crystal when you click on them. 
-    *start the jquery selector + the crystal id + click event + function { use the function created on step 18  and the parameters of the function will be one of the crystal objects .blue, .green, .red, .yerllow}
+    *inside the funciton, equal the current score to current score plus the value of the crytal ( crystal.value ) ✓✓
+    *console log your results to make sure the funcitons are working use the 
+19)on the main processes create a process that will change the value of each crystal when you click on them. ✓✓
+    *start with a jquery selector (crystal id) + click event + function { use the function created on step 18  and the parameters of the function will be one of the crystal objects .blue, .green, .red, .yerllow} ✓✓
 
-Change the html to reflect changes in current score
+Change the html to reflect changes in current score ✓✓
 20) use a jquery selector, chose appropriate id, selecte where you want to place the output of the code, and include the variable of the id selected (it could be the variable you chose for the current score)
+    *make sure to place this insue the addValues function
+    ***the 
 
 Incorporate a check to see if you win or lose
 21) create  a new function (make sure to give it a useful name, for ecample "check if you win")

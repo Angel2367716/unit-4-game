@@ -20,7 +20,7 @@
 //Randomizer function
 let getRandom = function(min, max) {return Math.floor(Math.random()* (max - min + 1)) + min;}
 
-//Starts the game and restarts it
+//Start and restart function
 let startGame = function () {
     //reset current score
     let currentScore = 0;
@@ -34,6 +34,7 @@ let startGame = function () {
     
     //Changing html to reflect changes made by random functions
     $("#targetScore").html(targetScore);
+    //$("#currentScore").html(currentScore);
     
     //testing
     console.log ("--------------------------")
@@ -43,6 +44,18 @@ let startGame = function () {
 
 }; 
 
+//Funtion to reflect currentscore after clicking on each crystal
+let addValues = function (crystal){
+    
+    //changes currentScore
+    currentScore = currentScore + crystal.value; 
+
+    //change the HTml to reflect changes in currentScore
+    $("#yourScore").html(currentScore);
+
+    //testing console
+    console.log ("Current Score:" + currentScore);
+}
     
 //MAIN PROCESSES-----------------------------------------------------------
     //Start the gme the first time
@@ -51,16 +64,20 @@ let startGame = function () {
     
     $("#blue").click(function(){
         //alert("test");
+        addValues(crystal.blue);
     });
     
     $("#green").click(function(){
         //alert("test");
+        addValues(crystal.green);
     });
     
     $("#red").click(function(){
         //alert("test");
+        addValues(crystal.red);
     });
     
     $("#yellow").click(function(){
         //alert("test");
+        addValues(crystal.yellow);
     });
