@@ -32,6 +32,9 @@ let startGame = function () {
     crystal.red.value = getRandom(1,12);
     crystal.yellow.value = getRandom(1,12);
     
+    //Changing html to reflect changes made by random functions
+    $("#targetScore").html(targetScore);
+    
     //testing
     console.log ("--------------------------")
     console.log ("Target Score:" + targetScore);
@@ -40,7 +43,12 @@ let startGame = function () {
 
 }; 
 
+    
 //MAIN PROCESSES-----------------------------------------------------------
+    //Start the gme the first time
+    startGame ();
+    
+    
     $("#blue").click(function(){
         //alert("test");
     });
@@ -56,5 +64,3 @@ let startGame = function () {
     $("#yellow").click(function(){
         //alert("test");
     });
-
-startGame ();
