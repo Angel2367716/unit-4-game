@@ -33,9 +33,9 @@ Detailed instructions
 8)use proper syntax to create a click event $ ("#").click(function(){here is what you want randofunction to perform you can use alert to make sure your code works when you press on a gem;}
 
 ---create more complex values
-9) create a startGame function, remember you need to name a function by using asigning it with a variable
+9) create a startGame function, remember you need to name a function by asigning it with a variable
 10) reset the current score - use a variable to equal it to zero 
-11)set a new target score b/w 19 and 120 - for target score you need to use a number randomizer. "variable" + "name of variable" equal to function (parameter would be minimum and maximum) {here you can use ther return action followed by the randomzier, this way you can call upon this funciton at a later time to get a random number}
+11)set a new target score b/w 19 and 120 - for target score you need to use a number randomizer. "variable" + "name of variable" equal to function (parameter would be minimum and maximum) {here you can use the return action followed by the randomzier, this way you can call upon this funciton at a later time to get a random number}
     *remember you are getting 5 different random numbers
     *you can get a random number function to return a random number b/w the min and the max
 12)set different values for each of the crystals b/w 1-12
@@ -52,31 +52,31 @@ Detailed instructions
 Changing the current score in response to the crystals being clicked
 18)create a new function, you can call it addValues () 
     *each of the crystals have been organized as objects
-    *inside the funciton equal the current score to current score plus crystal.value
+    *inside the funciton, equal the current score to current score plus the value of the crytal ( crystal.value )
     *console log your results to make sure the funcitons are working use the "target score" + crystal.blue.value + another piece of html + etc.
 19)on the main processes create a process that will change the value of each crystal when you click on them. 
-    *start the query selector + the crystal id + click event + function { use the function created on step 18  and the parameters of the function will be one of the crystal objects .blue, .green, .red, .yerllow}
+    *start the jquery selector + the crystal id + click event + function { use the function created on step 18  and the parameters of the function will be one of the crystal objects .blue, .green, .red, .yerllow}
 
 Change the html to reflect changes in current score
 20) use a jquery selector, chose appropriate id, selecte where you want to place the output of the code, and include the variable of the id selected (it could be the variable you chose for the current score)
 
 Incorporate a check to see if you win or lose
 21) create  a new function (make sure to give it a useful name, for ecample "check if you win")
-22)make sure you add a main process for the funciton you just create it (you can use the name of the funciton plus parentheses)
+22)make sure you add a main process for the funciton you just created it (you can use the name of the funciton plus parentheses)
 23) inside the new function create an if statment
-    *check if the player score is lagrer than the target score
+    *check if the player score is larger than the target score
         *use the alert method to pop up a message to let the player know if they loss
         *console log it to make sure it works
     *check if player score is equal to the target score
         *do the same thing but if the player wins
-    *make sure you change the html to reflect it by using the variable of the win or loss count and addin the plus sign twice
+    *make sure you change the html to reflect it by using the variable of the win or loss count and adding the plus sign twice
 24)Change the loss count in html using the "else if" statement
     *jquery selector, loss count id, type of document, variable for id
     *do the same thing but for the win count id
 
 Restarting the game
 25) add the startGame process  at the end of the else if statment
-        *make sure the current score is equal to zero ( it should be in a form of a variable, just remember if you put the same variable in the global score and inside a function it might not reset back to zero)
+        *make sure the current score is equal to zero ( it should be in a form of a variable, just remember if you put the same variable in the global scope and inside a function it might not reset back to zero)
 
 
 
