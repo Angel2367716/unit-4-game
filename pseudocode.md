@@ -18,28 +18,33 @@
 
 
 
-
 Detailed instructions
-1)create global variable section, funtcions and main process sections
-2)3 different categories we have to track: value of criystal each round, current and target score, wins and los counts
-3)create a generic crystal object, inside the object create subobjects for each of the colors.
----3)each of them are given a value = 0 (value property), and a name (name will be changed later on)
-4)make variables to track the win and lose count scores
-5)make variables to track the number of times you win vs the number of times you loss a game 
+1)create global variable section, funtcions and main process sections </>
+2)3 different categories we have to track: value of criystal each round, current and target score, wins and los counts </>
+3)create a generic crystal object, inside the object create subobjects for each of the colors.</>
+---3)each of them are given a value property (value=0), and a name (name will be changed later on)</>
+4)make variables to track the win and lose count scores </>
+5)make variables to track the number of times you win vs the number of times you loss a game </>
 
-
-6)Create click events associated to each of your crystals with a specific id
+-Creating click events
+6)Create click events associated to each of your crystals with a specific id </>
 7)incoorporate jQuery (put it before js)
-8)use proper syntax to create a click event $ ("#").click(function(){here is what you want randofunction to perform you can use alert to make sure your code works when you press on a gem;}
+
+Just put this link on your html file
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+8)use proper syntax to create a click event $ ("#").click(function(){here is what you want randofunction to perform you can use alert to make sure your code works when you press on a gem;} </>
 
 ---create more complex values
-9) create a startGame function, remember you need to name a function by asigning it with a variable
-10) reset the current score - use a variable to equal it to zero 
-11)set a new target score b/w 19 and 120 - for target score you need to use a number randomizer. "variable" + "name of variable" equal to function (parameter would be minimum and maximum) {here you can use the return action followed by the randomzier, this way you can call upon this funciton at a later time to get a random number}
-    *remember you are getting 5 different random numbers
-    *you can get a random number function to return a random number b/w the min and the max
+9) create a startGame function, remember you need to name a function by assigning it with a variable </>
+10) reset the current score - use a variable to equal it to zero </>
+    *make sure you put it inside the startGame function </>
+11)set a new target score b/w 19 and 120 - for target score you need to use a number randomizer. "variable" + "name of variable" equal to function (parameter would be minimum and maximum) {here you can use the return action followed by the randomzier, this way you can call upon this funciton at a later time to get a random number} </>
+    *remember you are getting 5 different random numbers </>
+    *you can get a random number function to return a random number b/w the min and the max </>
 12)set different values for each of the crystals b/w 1-12
-    *here use the obect syntax format where you grab one of the global variables and along side with one of its sub-object and equal it to the randomizer function in order to get a random number b/w 1-12 (the 1-12 will be the parameters you would have to put)
+    *here use the object syntax format where you grab one of the global variables and along side with both of its sub-object and equal it to the randomizer function in order to get a random number b/w 1-12 (the 1-12 will be the parameters you would have to put)
     ****This would be a good place to use console log to test out your code and make sure it works
 13)change the html to reflect all of the before changes
     14)Add the start game set up in the main process
