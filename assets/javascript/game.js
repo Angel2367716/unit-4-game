@@ -65,11 +65,16 @@ let winCheck  = function ()
     {
         //Check if current score is greater than the target score
         if (currentScore > targetScore) {
-            alert ("you lost");
-            console.log ("you lost");
+            alert ("you Lost!!");
+            console.log ("You lost");
             loseCount++;
             $("#loseCount").html(loseCount)
-        } 
+        } else if (currentScore === targetScore) {
+            alert ("You won!!");
+            console.log ("You won");
+            winCount++;
+            $("#winCount").html(winCount)
+        }
     }
 //MAIN PROCESSES-----------------------------------------------------------
     //Start the gme the first time
