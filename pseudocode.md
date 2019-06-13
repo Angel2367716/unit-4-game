@@ -73,17 +73,17 @@ Change the html to reflect changes in current score ✓✓
 Incorporate a check to see if you win or lose
 21) create  a new function (make sure to give it a useful name, for example "check if you win") ✓✓
 22)make sure you add a main process for the funciton you just created it (you can use the name of the funciton plus parentheses) ✓✓
-    *you should place this process in the function that changes the current score, that way if the player score equals the target score or if the player score goes above the target score you will be able to tell if the player won or lost
+    *you should place this process in the function that changes the current score, that way if the player score equals the target score or if the player score goes above the target score you will be able to tell if the player won or lost ✓✓
 23) inside the new function create an if statment
-    *check if the player score is larger than the target score
-        *use the alert method to pop up a message to let the player know if they lost
-        *console log it to make sure it works
-    *check if player score is equal to the target score
-        *do the same thing but if the player wins
-    *make sure you change the html to reflect it by using the variable of the win or loss count and adding the plus sign twice
-24)Change the loss count in html using the "else if" statement
-    *jquery selector, loss count id, type of document, variable for id
-    *do the same thing but for the win count id
+    *check if the player score is larger than the target score ✓✓
+        *use the alert method to pop up a message to let the player know if they lost ✓✓
+        *console log it to make sure it works ✓✓
+    *check if player score is equal to the target score✓✓
+        *do the same thing but if the player wins ✓✓
+    *make sure you change the html to reflect it by using the variable of the win or loss count and adding the plus sign twice ✓✓
+24)Change the loss count in html using the "else if" statement✓✓
+    *jquery selector, loss count id, type of document, variable for id ✓✓
+    *do the same thing but for the win count id ✓✓
 
 Restarting the game
 25) add the startGame process  at the end of the else if statment

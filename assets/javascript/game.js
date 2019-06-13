@@ -16,14 +16,15 @@
         let winCount = 0;
         let loseCount = 0;
 
-//FUNTIONS-----------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------FUNCTIONS--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
 //Randomizer function
 let getRandom = function(min, max) {return Math.floor(Math.random()* (max - min + 1)) + min;}
 
-//Start and restart function
+//Start and restart the game
 let startGame = function () {
     //reset current score
-    let currentScore = 0;
+    currentScore = 0;
     //set target score between 19 and 120
     targetScore = getRandom (19,120);
     //set different values for each of the crystals (bewteen 1-12)
@@ -34,7 +35,7 @@ let startGame = function () {
     
     //Changing html to reflect changes made by random functions
     $("#targetScore").html(targetScore);
-    //$("#currentScore").html(currentScore);
+    $("#currentScore").html(currentScore);
     
     //testing
     console.log ("--------------------------")
@@ -51,7 +52,7 @@ let addValues = function (crystal){
     currentScore = currentScore + crystal.value; 
 
     //change the HTml to reflect changes in currentScore
-    $("#yourScore").html(currentScore);
+    $("#currentScore").html(currentScore);
 
     //Calling the winCheck function
     winCheck ();
@@ -63,21 +64,37 @@ let addValues = function (crystal){
 //Function to check if player wins or loses
 let winCheck  = function ()
     {
-        //Check if current score is greater than the target score
+    //Check if current score is greater than the target score
         if (currentScore > targetScore) {
             alert ("you Lost!!");
             console.log ("You lost");
+            
+            //Adding to the lose count 
             loseCount++;
-            $("#loseCount").html(loseCount)
-        } else if (currentScore === targetScore) {
+
+            //changing the html element if the player losses
+            $("#loseCount").html(loseCount);
+    
+            //Restart the game 
+            startGame();
+        } 
+    //Check if current score is equal to the target score
+        else if (currentScore === targetScore) {
             alert ("You won!!");
             console.log ("You won");
+            
+            //Adding to the win count
             winCount++;
-            $("#winCount").html(winCount)
+
+            //changing the html elements if player wins
+            $("#winCount").html(winCount);
+            
+            //Restart the game 
+            startGame();
         }
     }
-//MAIN PROCESSES-----------------------------------------------------------
-    //Start the gme the first time
+ //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- MAIN PROCESSES --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //Start the game the first time
     startGame ();
     
     
