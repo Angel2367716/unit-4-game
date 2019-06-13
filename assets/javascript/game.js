@@ -53,10 +53,24 @@ let addValues = function (crystal){
     //change the HTml to reflect changes in currentScore
     $("#yourScore").html(currentScore);
 
+    //Calling the winCheck function
+    winCheck ();
+
     //testing console
     console.log ("Current Score:" + currentScore);
 }
-    
+
+//Function to check if player wins or loses
+let winCheck  = function ()
+    {
+        //Check if current score is greater than the target score
+        if (currentScore > targetScore) {
+            alert ("you lost");
+            console.log ("you lost");
+            loseCount++;
+            $("#loseCount").html(loseCount)
+        } 
+    }
 //MAIN PROCESSES-----------------------------------------------------------
     //Start the gme the first time
     startGame ();

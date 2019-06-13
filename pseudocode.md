@@ -67,15 +67,16 @@ Changing the current score in response to the crystals being clicked
 
 Change the html to reflect changes in current score ✓✓
 20) use a jquery selector, chose appropriate id, selecte where you want to place the output of the code, and include the variable of the id selected (it could be the variable you chose for the current score)
-    *make sure to place this insue the addValues function
-    ***the 
+    *make sure to place this insue the addValues function✓✓
+    ***note: when you try to relect changes to the hmtl after clicking on each of the crystals, make sure the player score has an id that does not confuse you.✓✓
 
 Incorporate a check to see if you win or lose
-21) create  a new function (make sure to give it a useful name, for ecample "check if you win")
-22)make sure you add a main process for the funciton you just created it (you can use the name of the funciton plus parentheses)
+21) create  a new function (make sure to give it a useful name, for example "check if you win") ✓✓
+22)make sure you add a main process for the funciton you just created it (you can use the name of the funciton plus parentheses) ✓✓
+    *you should place this process in the function that changes the current score, that way if the player score equals the target score or if the player score goes above the target score you will be able to tell if the player won or lost
 23) inside the new function create an if statment
     *check if the player score is larger than the target score
-        *use the alert method to pop up a message to let the player know if they loss
+        *use the alert method to pop up a message to let the player know if they lost
         *console log it to make sure it works
     *check if player score is equal to the target score
         *do the same thing but if the player wins
