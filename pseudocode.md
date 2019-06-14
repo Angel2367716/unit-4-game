@@ -86,8 +86,8 @@ Incorporate a check to see if you win or lose
     *do the same thing but for the win count id ✓✓
 
 Restarting the game
-25) add the startGame process  at the end of the else if statment
-        *make sure the current score is equal to zero ( it should be in a form of a variable, just remember if you put the same variable in the global scope and inside a function it might not reset back to zero)
+25) add the startGame process  at the end of the else if statment✓✓
+        *make sure the current score is equal to zero ( it should be in a form of a variable, just remember if you put the same variable in the global scope and inside a function it might not reset back to zero) ✓✓
 
 
 

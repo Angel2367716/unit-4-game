@@ -66,7 +66,7 @@ let winCheck  = function ()
     {
     //Check if current score is greater than the target score
         if (currentScore > targetScore) {
-            alert ("you Lost!!");
+            alert ("Your total score is:" + " " + currentScore + " " + "You lost!!");
             console.log ("You lost");
             
             //Adding to the lose count 
@@ -80,7 +80,7 @@ let winCheck  = function ()
         } 
     //Check if current score is equal to the target score
         else if (currentScore === targetScore) {
-            alert ("You won!!");
+            alert ("Your total score is:" +" " + currentScore +" " + "You won!!");
             console.log ("You won");
             
             //Adding to the win count
