@@ -28,6 +28,7 @@ body {
 
 .target-score, .player-score, p, h4, h5, h1{
     font-weight: bold;
+    font-size: 20px;
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
     -webkit-background-clip: text;
