@@ -148,3 +148,13 @@ h1{
       color:#ECECEC;
     }
   
+
+    /* botton effect */
+    .btn{
+      transition-duration: 100ms;
+    transition: all .2s ease-in-out;
+    }
+
+    .btn:hover{
+      transform: scale(1.7);
+    }
