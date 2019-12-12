@@ -1,19 +1,19 @@
-body {
+/* body {
     background: url(../images/crystal_background.jpg)  no-repeat center center fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover
-    
-}
-
+}    */
+/* 
 .jumbotron {
     background-size:cover;
     background-color: rgba(100,100,100, 0.5);
   color: inherit;
-}
+} */
 
-.card {
+
+.card, .jumbotron {
     background-size:cover;
     background-color: rgba(100,100,100, 0.5);
   color: inherit;
@@ -27,15 +27,19 @@ body {
 }
 
 .target-score, .player-score, p, h4, h5, h1{
-    font-weight: bold;
-    font-size: 20px;
-    color: #f35626;
-    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 60s infinite linear;
+  font-weight: bold;
+  font-size: 20px;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
 }
 
+
+h1{
+  font-size:60px;
+}
 
 @-webkit-keyframes hue {
     from {
@@ -54,3 +58,93 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+.main-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
+
+  background: url(../images/crystal_background.jpg)  no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+    
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 990px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 990px;
+  }
+}
+
+
+
+  /* navbar */
+  .toolbar {
+    /* position: fixed; */
+    width: 100%;
+    /* background:#eae9e9; */
+    z-index: 500;
+  }
+  .navigation {
+    display:flex;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .nav-spacer {
+    flex:1;
+  }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /* background-color: #45CE14; */
+      background-image: linear-gradient(#040404, #575457);
+      /* position: fixed; */
+      top: 0;
+      width: 100%;
+      display:flex;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: #ECECEC;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover{
+      background-color: #8590AA;
+    }
+    
+  
+  
+    /* footer */
+    .footer {
+      display: block; 
+      text-align: center;
+      /* background-color: #45CE14; */
+      background-image: linear-gradient(#575457, #040404);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color:#ECECEC;
+    }
+  
